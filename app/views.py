@@ -32,3 +32,20 @@ def create_user():
         return abort(400)
     USERS.append(user)
     return user
+
+
+@app.post('/records/')
+def create_record():
+    try:
+        record = {
+            'id': RECORD[-1]['id'] + 1,
+            'user_id': request.get_json()['user_id'],
+            'category_id': request.get_json()['category_id'],
+            'payment': request.get_json()['payment']
+        }
+    except KeyError:
+        return abort(400)
+    RECORD.append(record)
+    return record
+
+
