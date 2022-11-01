@@ -1,5 +1,5 @@
 from flask import Flask
-from app.data import USERS, CATEGORY, RECORD
+from app.data import USERS, CATEGORIES, RECORD
 
 app = Flask(__name__)
 

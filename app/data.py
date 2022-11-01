@@ -5,7 +5,7 @@ USERS = [
     }
 ]
 
-CATEGORY = [
+CATEGORIES = [
     {
         'id': 1,
         'name': 'Food'
