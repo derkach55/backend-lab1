@@ -1,0 +1,128 @@
+{
+	"info": {
+		"_postman_id": "6775fb99-0abe-4de1-ac7d-e201ebcb8b8f",
+		"name": "lab1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "24149830"
+	},
+	"item": [
+		{
+			"name": "create-category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Medicine\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{domain}}/category/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"category",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-categories",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "http://{{domain}}/categories/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"categories",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Roman\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://{{domain}}/user/",
+					"protocol": "http",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"user",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get-records",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/{{domain}}/1/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"{{domain}}",
+						"1",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
