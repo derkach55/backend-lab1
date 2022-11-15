@@ -1,5 +1,5 @@
 from app import app
-from flask import request, abort
+from flask import request, abort, jsonify
 from app import USERS, CATEGORIES, RECORD
 
 
@@ -18,7 +18,7 @@ def create_category():
 
 @app.get('/categories/')
 def get_categories():
-    return CATEGORIES
+    return jsonify(CATEGORIES)
 
 
 @app.post('/user/')
